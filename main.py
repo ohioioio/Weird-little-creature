@@ -29,7 +29,7 @@ client = MyClient(intents=intents)
 tree = app_commands.CommandTree(client)
 
 @tree.command(name = "thought", description = "Get a random thought out of the weird little guy's head", guild=discord.Object(id=1055287764775620638)) #Add the guild ids in which the slash command will appear. If it should be in all, remove the argument, but note that it will take some time (up to an hour) to register the command if it's for all guilds.
-async def changeStatus(interaction):
+async def think(interaction):
     funnytable = [
         "https://pbs.twimg.com/media/Ff0spOnWAAAPaMr?format=jpg&name=large", 
         "ah yes the anime beam struggle, or as I like to call it, reverse tug-of-war", 
